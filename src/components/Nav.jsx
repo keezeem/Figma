@@ -73,13 +73,13 @@ const Nav = () => {
           {/* Login and Get Started */}
           <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:ml-4">
             <a
-              href="/"
+              href="/login"
               className="block lg:inline py-2 px-4 text-center bg-green-100 text-black font-semibold rounded-full shadow hover:shadow-md transition"
             >
               Login
             </a>
             <a
-              href="/"
+              href="/registration"
               className="block lg:inline py-2 px-4 text-center bg-green-500 text-white font-semibold rounded-full shadow hover:shadow-md transition"
             >
               Get Started ↗

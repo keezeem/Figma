@@ -1,27 +1,23 @@
-import React from 'react'
-import Nav from './components/Nav'
-import HeroSection from './components/heroSection'
-import Avater from './components/Avater'
-import About from './components/About'
-import PowerfullySimple from './components/PowerfullySimple'
-import HowItsWork from './components/HowItsWork'
-import Faq from './components/Faq'
-import Footer from './components/Footer'
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import Dashboard from './components/Dashboard';
+import ForgottenPassword from './components/ForgottenPassword';
+import LogIn from './components/LogIn';
+import Registration from './components/Registration';
 
 const App = () => {
   return (
-    <div>
-      <Nav/>
-      <HeroSection />
-      <Avater />
-      <About/>
-      <PowerfullySimple/>
-      <HowItsWork />
-      <Faq/>
-      <Footer/> 
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/registration" element={<Registration />} />
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/forgotten-password" element={<ForgottenPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
