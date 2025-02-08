@@ -18,7 +18,6 @@ import { CheckBadgeIcon } from '@heroicons/react/16/solid'
 import { ClockIcon } from '@heroicons/react/16/solid'
 import TransactionHistory from './TransactionHistory'
 import { Link } from 'react-router-dom'
-import Account from './Account'
 // import Account from './Account'
 
 
@@ -362,7 +361,7 @@ const Wallet = () => {
             <div className="px-4 sm:px-2 lg:px-4">{/* Your content */}
               <Centered />
               <TransactionHistory />
-              <Account />
+              {/* <Account /> */}
             </div>
           </main>
         </div>

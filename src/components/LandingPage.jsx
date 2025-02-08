@@ -4,20 +4,24 @@ import HeroSection from './heroSection'
 import Avater from './Avater'
 import About from './About'
 import PowerfullySimple from './PowerfullySimple'
-import HowItsWork from './HowItsWork'
-import Faq from './Faq'
 import Footer from './Footer'
+// import ImageSlider from './ImageSlider'
+import Exploring from './Exploring'
+import Pricing from './Pricing'
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className='bg-gray-50'>
       <Nav/>
       <HeroSection />
       <Avater />
+      {/* <ImageSlider /> */}
+      <Pricing/>
       <About/>
       <PowerfullySimple/>
-      <HowItsWork />
-      <Faq/>
+      <Exploring />
+      {/* <HowItsWork /> */}
+      {/* <Faq/> */}
       <Footer/> 
     </div>
   )
